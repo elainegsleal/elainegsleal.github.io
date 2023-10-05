@@ -1,0 +1,346 @@
+
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+
+ body {
+              
+         background-color: rgb(171, 223, 161);
+         height: 120vh;
+       
+     }
+
+      
+.folha{
+        background-image: url(imageods/gotadagua.avif);
+        height: 200px;
+        width: 100%;
+        margin:auto;
+        height:auto;
+        background-size: cover;
+        background-position: right center;
+
+        }
+ 
+ .interface {    
+     max-width: 1280px; /* se eu tirar isso, a caixa verde fiva inteira */
+     margin: 0 auto; 
+     
+ }
+ 
+ 
+ .flex {
+     display: flex;
+ 
+ }
+ 
+ .btn-contato button {
+ 
+     padding: 10px 20px;
+     /*margin-right: 25px; */
+     margin-bottom: 0;
+     font-size: 15px;
+     font-weight: 600;
+     background-color:rgb(178, 207, 186);
+     border: 0;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: .2s;
+ }
+
+ p{
+    color:rgb(68, 74, 121);
+    font-size: 18px;
+    line-height:1.5em;
+    font-weight:500;
+    text-align: justify;
+    border-bottom: ;
+    
+ }
+ 
+ h2{
+    font-size: 30px;
+    padding: 60px 4%;
+   
+    
+
+ }
+h2 .titulo {
+     color:black;      
+     font-size: 30px;
+     /* Margin:auto;*/
+     /*border-bottom:red;*/
+    
+ 
+  }
+
+ h2.titulo span {
+     color:rgb(9, 1, 77);
+     
+  }
+ 
+ button:hover, form .btn-enviar input:hover { /*somreamento e aumento do botao ao passar o mouse */
+     box-shadow: 0px 0px 8px rgb(226, 216, 207);
+     transform: scale(1.05);
+ }
+
+ main{
+    widht:80%;
+    margin:auto;
+    max-widht:860px;
+
+ }
+
+
+/* Estilo do cabecalho */
+
+header > .interface2 {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height:150px;
+    padding-top: 30px; 
+    padding-bottom: 20px;
+}
+
+header a{
+    color:rgb(208, 221, 230);
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+    font-weight: 600;
+    
+    
+}
+
+header nav ul {
+    list-style-type: none;
+   /* margin-bottom: 0;*/
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:0 10px;
+    font-size: 30px;
+    margin-left: 20px;
+ 
+   
+}
+
+
+header a:hover {
+    color:rgb(40, 21, 161);
+    transform: scale(1.05);
+}
+
+/*header .menu-desktop li{
+ display: flex;
+ 
+}*/
+
+
+header .txt-inicial h2{
+    color:rgb(246, 245, 250);
+    padding:50px 30px 30px;
+  
+}
+
+
+ /*ESTILO MENU MOBILE */
+
+ .btn-abrir-menu i{
+    color: rgb(25, 241, 159);
+    font-size:40px;
+    font-weight: 700px;
+    margin-right: 18px;
+
+}
+     
+.menu-mobile{
+    background-color:rgb(37, 37, 37);
+    Height:100vh;
+    position:fixed; 
+    top:0;
+    right:0;  /* posiciona do lado direito */
+    z-index:999999; /* dtermina que o menu fica por cima de qualquer elmento de menor valor do site*/
+    width:0%;   /* vai ficar oculto na pagina */
+    overflow:hidden; /*conferir*/
+    transition:.5s;
+   
+}
+    
+
+.menu-mobile nav ul{
+    text-align: right; /* posiciona o menu do lado direito */
+}
+
+.menu-mobile nav ul li {
+    display:block;
+}
+
+.menu-mobile nav ul li a {
+    color:#fff;
+    font-size:18px;
+    font-weight: 200px;
+    padding:30px 4%;
+    display:block;
+    
+}
+
+
+.menu-mobile nav ul li a:hover{
+    background-color:rgb(25, 241, 159);
+    color:black;
+    
+
+}
+
+
+.menu-mobile.abrir-menu {
+    width:50%;
+}
+
+.menu-mobile.abrir-menu ~.overlay-menu {
+    display:block;
+}
+
+.menu-mobile .btn-fechar {
+padding:20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color:rgb(17, 236, 53);
+    font-size:22px;
+}
+
+
+.overlay-menu{
+    background-color: rgba(82, 73, 73, 0.658);
+    width:100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 88888;
+    display: none; /* so aparece quando menu mobile estiver aberto */
+    
+    
+
+}
+
+
+/*-----container --------------------------------------------------------------------------------------------------*/
+ .container{
+    padding: 80px 4%; 
+    margin:12px 30px;
+ 
+    
+   }
+ 
+article p{
+   margin:12px 50px;
+    }
+
+/* curiosidades-------------------------------------------------------------------------------------------------- */
+section#curiosidades{
+    padding: 20px 10px; 
+    box-shadow: 0 0 20px 0px gray;
+      
+}
+
+section#curiosidades .flex{
+ gap: 10px;
+}
+
+
+#curiosidades .curiosidades-box{
+ color:rgb(3, 85, 139);
+ padding:20px;
+ border-radius: 20px;
+ margin: 20px 3px;
+ transition:.2s;
+}
+
+
+#curiosidades .curiosidades-box h3{
+ margin: 20px 0;
+ font-size: 20px;
+}
+
+#curiosidades .curiosidades-box:hover{
+ transform: scale (1.05);
+ box-shadow:0 0 8px grey;
+}
+
+/*--footer--*/
+
+.borda {
+    padding: 10px 0;
+    border-top: 2px solid #054905fd;
+}
+
+
+/*RESPONSIVIDADE */
+
+@media screen and (max-width:1020px) {
+   /*classes*/
+   .flex{
+        flex-direction: column;
+        }
+
+    .folha{
+        width:100%;
+       }
+
+    header .btn-contato button{
+        display:none;
+    }
+
+    .folha .txt-inicial h2 {
+        font-size:20px;
+       text-align:left;
+       margin-bottom: 0;
+        
+    }
+    #container h2{
+        font-size:22px;
+        text-align:justify;
+        padding:0;
+        margin:30px 8%;
+    }
+
+   
+
+    #container article p {
+        line-height: 25px;
+        font-size: 18px;
+        margin:30px 8%;
+    }
+     
+    .btn-abrir-menu i {
+     margin-top:0;
+    }
+
+
+    #curiosidades  h2{
+        font-size: 25px;
+
+    }
+
+  
+   .curiosidades-box img{
+    width:100%;
+    max-width:250px;
+    margin:auto;
+    display:inline-block;
+    
+}
+
+.menu-mobile.abrir-menu {
+    width:60%;
+}
+}

@@ -1,0 +1,172 @@
+body{
+    background-color: rgba(153, 156, 96, 0.699);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+    height:120vt;
+  
+}
+
+.interface {    
+    max-width: 1280px; /* se eu tirar isso, a caixa verde fiva inteira */
+    margin: 0 auto; 
+   
+  
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+   }
+
+ button:hover, form .btn-enviar input:hover { /*somreamento e aumento do botao ao passar o mouse */
+    box-shadow: 0px 0px 8px rgb(252, 247, 249);
+    transform: scale(1.05);
+}
+
+
+  
+
+h2.titulo {
+    color:rgb(83, 4, 53);
+    font-size: 30px;
+    text-align: center;
+}
+
+.div_titulo{
+    padding:20px;
+    margin:20px 30px;
+    border: 3px solid rgb(83, 4, 53);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font: size 20px;
+     color: rgb(4, 4, 71);
+}
+
+.div_central{
+    padding:20px;
+    margin:30px;
+    border: 3px solid rgba(230, 123, 2, 0.959);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: size 16px; color:rgb(29, 29, 116) ;
+    font-weight: bolder;
+        }
+
+#div_unica{
+    padding:20px;
+    margin:30px;
+    border: 3px solid rgba(230, 123, 2, 0.959);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: size 18px; color:rgb(83, 4, 53);
+    font-weight: bolder;
+
+        }
+.div_contato{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: size 12px; color:rgb(116, 29, 29) ;
+    font-weight: bolder;
+}
+
+
+section.formulario{
+    padding: 40px 4%;
+  /* box-shadow: 0 0 30px 0px gray; */
+ 
+}
+
+form{
+    max-width: 300px;
+    margin: 0 auto; /* centraliza o formulario na tela */
+    display:flex; /* caixa de teste uma embaixo da outra */
+    justify-content: center; /*centraliza*/
+    flex-direction:column; /*alinha em coluna */
+    gap:10px; /*estpaço entre os campos */
+    margin-top: 40px;
+} 
+
+form input, form textarea {
+    width: 100%; /*usa todo espaço do form */
+    background-color: rgba(21, 22, 22, 0.582);
+    border:0; /* tira borda */
+    outline:0; /* tira contorno da orda */
+    padding:15px 15px; /*aumenta o espaço interno */
+    border-radius: 15px; /*arredonda a borda */
+    color:#fff; /* muda cor do texto */
+    font-size:14px; /* aumenta afonte */
+
+}
+/* estilo contato*/
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center /* centraliza borao enviar */
+}
+
+form .btn-enviar input{ 
+    width:100px;
+    background-color:rgb(83, 4, 53);
+    color: rgba(245, 244, 243, 0.959);
+    font-weight:700; /* negrita a fonte */
+    cursor:pointer;
+    transition:.2s;
+
+}
+/* estilo RODAPE */
+
+footer{
+    padding-top: 100px;
+    /* box-shadow: 0 0 20px 0px gray;*/
+ 
+ }
+ 
+ footer .flex {
+     justify-content: center;
+     gap:20px;
+ }
+ 
+ 
+ 
+ .borda {
+    
+     border-top: 2px solid rgba(230, 123, 2, 0.959);
+ }
+ 
+ .contato{
+    color:rgb(83, 4, 53);
+    font-size: 20px;
+    font-weight: 800px;
+    }
+ 
+  i{
+        font-size: 25px;
+        color:rgb(17, 156, 4)
+    }
+
+    @media screen and (max-width:1020px) {
+        body{
+            background-color:#fff;
+        }
+        
+    }
+    .div_central img{
+        width:100%;
+        max-width:250px;
+        margin:auto;
+    }
+
+    #div_unica img{
+        width:100%;
+        max-width:250px;
+        margin:auto;
+    }
+    form input, form textarea {
+        width: 100%; 
+        max-width:250px;
+    }

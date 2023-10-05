@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio Elaine Leal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">    <!--icones do bootstrap-->
+   <script src="menu.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="interface2">
+            <div class="logo">
+               <img src="images/logotipo.jpg" alt="logotipo">
+             </div> <!-- fim logotipo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li> <a href="index.html"> Sobre </a></li>
+                    <li> <a href="#portifolio"> Projetos </a></li>
+                    <li> <a href="curriculo.html"> Currículo </a></li>                   
+                    <li> <a href="#formulario" alt=""> Contato</a> </li>
+                        <!-- <li> <a href="#"> Con </a></li> -->
+                </ul>
+            </nav> <!--fim menu-->
+           
+               <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+               </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                
+                 <nav>
+                        <ul>
+                        <li> <a href="index.html"> Sobre </a></li>
+                        <li> <a href="#portifolio"> Projetos </a></li>
+                        <li> <a href="curriculo.html"> Currículo </a></li>                   
+                        <li> <a href="#formulario" alt=""> Contato</a> </li>
+                        <li> <a href="#" alt=""> Download CV</a> </li>
+                        </ul>
+                </nav>
+            </div><!--fim menu mobile-->
+           
+            <div class="overlay-menu" id="overlay-menu"></div> <!--sem conteudo. somente para estilizar a opacidade do site -->
+           
+        </div><!--inteface-->
+
+    </header>
+
+    <main>
+        <section class="topo">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo">
+                        <h1> Elaine Cristina Leal</h1>
+                        <p> Instrutora e Desenvolvedora WEB, Graduada em Informática e Especialista em Educaçao Digital.</p>
+
+                        <div class="btn-contato">
+                            <a href="#formulario" alt="">
+                                <button> Entre em Contato</button>
+                            </a>
+                        </div> <!-- fim do button ente em contato-->
+                        <div class="btn-contato">
+                            <a href="#" alt="">
+                                <button>Download CV</button>
+                            </a>
+                        </div> 
+            
+                    </div>                    
+                    <div class="img-topo">
+                        <img src="images/ftelaine2.png" alt="">
+                    </div>
+                   
+                </div> <!--classe flex universal */-->
+
+            </div>
+        </section>
+
+       
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/ftelaine3.png" alt="">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>Olá, <span> Sou Elaine Leal. </span> </h2>
+                        <p>Sou graduada em Informática pela Universidade Católica Do Salvador – Ucsal  e especialista em Educação Digital(2023)- e também em  Metodologia do Ensino, pesquisa e Extensão(2009), cursados na Universidade do Estado da Bahia- UNEB. Estou concluindo o Curso em Desenvolvimento WEB, através do projeto Elas na Tech, promovido pela JA Brasil. Possuo tambem curso de Instrutoria promovido pela UCS - Bahia(2022)</p>
+                        <p>Desenvolvedora Front- End, com experiencia em HTML, CSS, Bootrstrap, Java Script. Tambem possuo experiencias como Service Desk e Help Desk na utilização de ferramentas de softwares e Hardwares. Atualmente atuando no apoio a  gestão acadêmica dos cursos de nível superior.</p>
+                        <div class="btn-social">
+                            <a href="@"> <button><i class="bi bi-github"></i> </button></a>
+                            <a href="@"> <button><i class="bi bi-linkedin"></i> </button></a>
+                        <div>
+                    </div>
+                </div>
+
+            </div>
+           
+        </section>
+
+        <!-- minhas habilidades-->
+
+
+       <!-- <div class="habilidades">
+            <h2 Class="titulo"> Minhas <span> Habilidades. </span> </h2>
+            <ul>
+                <li></li>
+            </ul>
+
+        </div> -->
+
+        <section id="portifolio">
+            <div class="interface">
+                <h2 Class="titulo"> Meu <span> Portifólio. </span> </h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/curriulo-mobile.png);">
+                       <div class="overlay"><p><a href="curriculo.html"> Currículo </a> <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, neque. </p> </div>
+                    </div>
+                   
+                   
+                    <div class="img-port" style="background-image: url(images/cardapiomoble2.png);">
+                        <div class="overlay"> <p><a href="cardapio.html"> Cardápio </a>  <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, neque.</p></div> 
+                                                
+                    </div>
+                  
+                    <div class="img-port" style="background-image: url(images/odsmobile2.png);">
+                        <div class="overlay"><p><a href="projetods.html"> Projeto ODS</a> <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, neque.</p></div>  
+                      
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="formulario">
+            <div class="interface">
+              <h2 Class="titulo"> Fale  <span> Comigo. </span> </h2>
+             <form action="">
+                <input type="text" placeholder="Nome Completo:" required>
+                <input type="text" placeholder="Digite seu Email:" required>
+                <input type="text" placeholder="Celular:">
+                <textarea name="" id="" placeholder="Digite aqui sua mensagem:"> </textarea>
+                <div class="btn-enviar"> 
+                    <input type="submit" value="ENVIAR">
+                </div>
+             </form> 
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="flex">
+                    <div class="btn-social">
+                            <a href="@"> <button><i class="bi bi-github"></i> </button></a>                       
+                            <p>Github</p>
+                        </div>
+                        <div class="btn-social">
+                            <a href="@"> <button><i class="bi bi-linkedin"></i> </button></a>
+                            <p>Linkedin</p>
+                        </div>
+            </div>                
+            <div class="line-footer borda">
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:nancrisleal@gmail.com">nancrisleal@gmail.com</a></p>
+                   
+            </div>
+       </div>
+    </footer>
+
+</body>
+</html>
